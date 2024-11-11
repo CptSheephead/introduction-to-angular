@@ -7,12 +7,12 @@
     </section>
     <article>
         <ng-container *ngIf="selectedLocation">
-            <img [src]="selectedLocation?.photo">
-            <p>{{selectedLocation?.name}}</p>
-            <p>{{selectedLocation?.availableUnits}}</p>
-            <p>{{selectedLocation?.city}}, {{selectedLocation?.state}}</p>
-            <p>{{selectedLocation?.laundry ? "Has laundry" : "Does Not have laundry"}}</p>
-            <p>{{selectedLocation?.wifi ? "Has wifi" : "Does Not have wifi"}}</p>
+            <img [src]="selectedLocation.photo">
+            <p>{{selectedLocation.name}}</p>
+            <p>{{selectedLocation.availableUnits}}</p>
+            <p>{{selectedLocation.city}}, {{selectedLocation.state}}</p>
+            <p>{{selectedLocation.laundry ? "Has laundry" : "Does Not have laundry"}}</p>
+            <p>{{selectedLocation.wifi ? "Has wifi" : "Does Not have wifi"}}</p>
         </ng-container>
     </article>
 </main>
